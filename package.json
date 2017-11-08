@@ -1,0 +1,32 @@
+{
+  "name": "c2l",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./index.js",
+  "preferGlobal": "true",
+  "bin": {
+    "c2l": "./bin/c2l.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yuwancumian/c2l.git"
+  },
+  "keywords": [
+    "keyword1",
+    "keyword2"
+  ],
+  "author": "yuwancumian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuwancumian/c2l/issues"
+  },
+  "homepage": "https://github.com/yuwancumian/c2l",
+  "dependencies": {
+    "cac": "^4.2.4",
+    "fs-extra": "^4.0.2",
+    "request": "^2.83.0"
+  }
+}
