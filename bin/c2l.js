@@ -1,14 +1,11 @@
 const cac = require("cac");
 const cli = cac();
-const ora = require("ora");
-const download = require("../lib/down");
+
+const download = require("../lib/download");
 
 cli.command("*", "cdnjs to local", (input,flags)=>{
-  console.log("worked")
   const url = input[0]
-  console.log(flags.output)
-  // console.log(download)
-  download(url)
+  download(url, flags.o)
 });
 
 cli.option("output",{
@@ -17,12 +14,3 @@ cli.option("output",{
 });
 cli.parse();
 
-
-const spinner = ora();
-// sao.on('download:start', () => {
-//   spinner.text = 'Downloading...'
-//   spinner.start()
-// })
-// sao.on('download:stop', () => {
-//   spinner.stop()
-// })
